@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie lt-ie9 lt-ie8 lt-ie7 ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie lt-ie9 lt-ie8 ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie lt-ie9 ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="shortcut icon" href="">
+
+<title>ThemeShifters Update Log - Vinto HTML</title>
+
+<!-- Google Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css" media="screen" href="assets/css/bootstrap.css" />
+
+<!-- Syntax Highlighter -->
+<script type="text/javascript" src="assets/js/shCore.js"></script>
+<script type="text/javascript" src="assets/js/shBrushJScript.js"></script>
+<link type="text/css" rel="stylesheet" href="assets/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+<!-- Main Stylesheet -->
+<link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
+<!-- Modernizr v2.7.1 -->
+<script type="text/javascript" src="assets/js/modernizr-2.7.1.min.js"></script>
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="assets/js/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+		<!-- Begin Header -->
+        <header id="top" class="header-type">
+        	<div class="container">
+            	<div class="row">
+                	<div class="col-md-8 col-md-offset-2 clearfix text-center">
+                    	<div class="logo">ThemeShifters Update Log for <a href="#"><span class="theme-name">Vinto</span></a></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- // End Header -->
+
+        <!-- Main Navigation -->
+        <nav id="main-nav" class="main-nav pull-right clearfix">
+            <ul class="nav">
+                <li><a class="nav-title">Navigation</a></li>
+                <li class="current-menu-item"><a href="#1.1">Version 1.1</a></li>
+            </ul>
+        </nav>
+        <!-- // End Main Navigation -->
+
+        <!-- Content -->
+        <section class="content-type">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 clearfix"> 
+
+                        <!-- sections types -->
+                        <h2 id="1.1" class="section-title">Version 1.1</h2>
+
+                        <h3>Sub Menu</h3>
+                        <h4 class="special">style.css</h4>
+                        <ul>
+                            <li>Header Logo - added line 795 - 808:
+                            <script type="syntaxhighlighter" class="brush: js"><![CDATA[
+                                /*  ==================================================
+                                    # Header Logo - edit: v1.1
+                                    ================================================== */
+                                    .logo {
+                                        margin: 20px 0;
+                                    }
+                                    .logo,
+                                    .logo a {
+                                        height: 20px;
+                                        display: block;
+                                    }
+                                    .logo img {
+                                        height: 100%;
+                                    }
+                            ]]></script>
+                            </li>
+                            
+                            <li>Main Navigation - added line 1042 - 1112:
+                            <script type="syntaxhighlighter" class="brush: js"><![CDATA[
+                                /*  ==================================================
+                                    # Main Navigation - edit: v1.1
+                                    ================================================== */
+                                    .main-nav li {
+                                        float: left;
+                                    }
+                                    .main-nav li a {
+                                        color: #fff;
+                                        padding: 20px 15px;
+                                    }
+                                    .nav > li > a:hover,
+                                    .nav > li > a:focus,
+                                    .nav > .current-menu-item > a {
+                                        color: #f00423;
+                                        background: none;
+                                    }
+                                    .nav > li .sub-menu {
+                                        display: none;
+                                        position: absolute;
+                                        width: 180px;
+
+                                        list-style: none;
+                                        margin: 0;
+                                        padding: 0;
+
+                                        background: #000;
+                                    }
+                                    .nav > li > .sub-menu li {
+                                        position: relative;
+                                    }
+                                    .nav > li > .sub-menu .sub-menu {
+                                        position: absolute;
+                                        width: 180px;
+                                        left: 180px;
+                                        top: 0;
+                                    }
+                                    .nav li:hover > .sub-menu {
+                                        display: block;
+                                    }
+                                    .nav > li > .sub-menu li,
+                                    .nav > li > .sub-menu a {
+                                        float: none;
+                                        display: block;
+                                        color: #888;
+                                        padding: 0 15px;
+                                    }
+                                    .nav > li > .sub-menu a {
+                                        padding: 10px 0;
+                                        font-size: 11px;
+                                        border-top: 1px solid #222;
+                                    }
+                                    .nav > li > .sub-menu a:hover {
+                                        color: #fff;
+                                    }
+
+                                    /** mobile navigation */
+                                    #trigger-mobile-nav {
+                                        width: 20px;
+                                        height: 20px;
+                                        background: none;
+                                        display: none;
+                                        position: absolute;
+                                        right: 15px;
+                                        top: 20px;
+                                        cursor: pointer;
+                                        line-height: 0;
+                                        color: #fff;
+                                    }
+                                    #trigger-mobile-nav .fa {
+                                        font-size: 20px;
+                                    }
+                            ]]></script>
+                            </li>
+
+                            <li>Main Navigation - added line 1815 - 1850:
+                            <script type="syntaxhighlighter" class="brush: js"><![CDATA[
+                                /** mobile navigation */
+                                #trigger-mobile-nav {
+                                    display: block;
+                                }
+                                .mobile-nav {
+                                    width: 100%;
+                                    margin-bottom: 20px;
+                                    display: none;
+                                    overflow-x: hidden;
+                                    max-height: 420px;
+                                }
+                                .mobile-nav .nav li {
+                                    float: none;
+                                }
+                                .mobile-nav .nav > li > a {
+                                    font-size: 12px;
+                                    border-top: 1px solid #333;
+                                    padding: 10px 0;
+                                }
+                                .mobile-nav .nav > li:first-child > a {
+                                    border-top: 0px;
+                                }
+
+                                /** mobile sub-menu - since v1.1 */
+                                .nav > li > .sub-menu,
+                                .nav > li > .sub-menu .sub-menu {
+                                    display: block;
+                                    position: static;
+                                    width: 100%;
+                                }
+                                .nav > li > .sub-menu a,
+                                .nav > li > .sub-menu .sub-menu a {
+                                    padding: 10px 15px;
+                                    font-size: 11px;
+                                }
+                                /** end since v1.1 */
+                            ]]></script>
+                            </li>
+
+                        </ul>
+
+                        <h4 class="special">index-*.html, blog.html, single.html</h4>
+                        <ul>
+                            <li>Main Navigation - added line 52 - 55:
+                            <script type="syntaxhighlighter" class="brush: js"><![CDATA[
+                                <li><a href="#home">Home</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="index.html">Background Slider</a></li>
+                                        <li><a href="index-parallax.html">Parallax</a></li>
+                                    </ul>
+                                </li>
+                            ]]></script>
+                            </li>
+
+                        </ul>
+
+                        <h3>Other style.css</h3>
+                        <ul>
+                            <li>Post Media IMG height - added line 1438:
+                            <script type="syntaxhighlighter" class="brush: js"><![CDATA[
+                                .post-media img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            ]]></script>
+                            </li>
+
+                            <li>Embedded Media - added line 976 - 981:
+                            <script type="syntaxhighlighter" class="brush: js"><![CDATA[
+                                /*  ==================================================
+                                    # Embedded Media
+                                    ================================================== */
+                                    embed, iframe, object, video {
+                                        max-width: 100%;
+                                    }
+                            ]]></script>
+                            </li>
+
+                        </ul>
+
+
+                        <h3>Replace FitVids with FluidVids</h3>
+                        <ul>
+                            <li>Deleted <code>jquery.fitvids.js</code> from <code>assets/js/plugins</code></li>
+                            <li>Added <code>fluidvids.js</code> to <code>assets/js/plugins</code></li>
+
+                            <li>Replaced (in all .html files) the import of (FitVids)
+                            <code>
+                               &lt;script type="text/javascript" src="assets/js/plugins/jquery.fitvids.js"&gt;&lt;/script&gt;
+                            </code>
+                            with (FluidVids)
+                            <code>
+                               &lt;script type="text/javascript" src="assets/js/plugins/fluidvids.js"&gt;&lt;/script&gt;
+                            </code>
+                            </li>
+                        </ul>
+
+                            <h4 class="special">vinto.js</h4>
+                            <ul>   
+                                <li>Initialization of FluidVids - added line 678 - 684:
+                                <script type="syntaxhighlighter" class="brush: js"><![CDATA[
+                                    /*  ==================================================
+                                        # Initialize FluidVids
+                                        ================================================== */
+                                        $( function() {
+
+                                            fluidvids.init({
+                                                selector: 'iframe', // runs querySelectorAll()
+                                                players: ['www.youtube.com', 'player.vimeo.com'] // players to support
+                                            });
+
+                                        } );
+                                ]]></script>
+                                </li>
+
+                                <li>Replaced dynamic init of FitVids to FluidVids - replaced line 723 - 724. Removed this:
+                                <script type="syntaxhighlighter" class="brush: js"><![CDATA[
+                                    // FitVids
+                                    $( ".video" ).fitVids();
+                                ]]></script>
+                                Added this:
+                                <script type="syntaxhighlighter" class="brush: js"><![CDATA[
+                                    // FluidVids
+                                    fluidvids.apply();
+                                ]]></script>
+                                </li>
+                            </ul>
+
+                        <h3>Chrome Bug: AJAX Pop-Up Navigation</h3>
+                        <h4 class="special">vinto.js</h4>
+                        <ul>
+                            <li>Changed prepend() to append() - line 341 & line 367:
+                            <script type="syntaxhighlighter" class="brush: js"><![CDATA[
+                            popup_content.append('<ul class="project-nav"><li class="prev"><a class="ajax-nav" href="#" data-ajax="prev"></a></li><li class="exit"><a class="ajax-nav" href="#" data-ajax="exit">x</a></li><li class="next"><a class="ajax-nav" href="#" data-ajax="next"></a></li></ul>');
+                            ]]></script>
+                            </li>
+                            <li>Changed append() to prepend() - line 404 & line 422:
+                            <script type="syntaxhighlighter" class="brush: js"><![CDATA[
+                            popup_content.prepend(html);
+                            ]]></script>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- // End Content -->
+
+        <!-- Begin Footer -->
+        <footer id="footer">
+        	<div class="container text-center">
+        	<p class="copyright no-margin-bottom">&copy; 2014 ThemeShifters. All rights reserved. Designed and developed by <a href="#">ThemeShifters</a></p>
+        	</div>
+        </footer>
+        <!-- // End Footer -->
+        
+		<!-- jQuery and Bootstrap -->
+		<script type="text/javascript" src="assets/js/jquery.js"></script>
+        <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.scripts.js"></script>
+
+        <!-- jQuery Custom -->
+        <script type="text/javascript" src="assets/js/custom.js"></script>
+
+</body>
+</html>
